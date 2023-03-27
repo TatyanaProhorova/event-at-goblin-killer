@@ -1,8 +1,5 @@
-body {
-    color: #999;
-}
-
 .position {
     width: 150px;
     height: 150px;
+    background: red;
 }
