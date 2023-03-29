@@ -10,7 +10,7 @@ export default class Goblin {
 
     setInterval(() => {
       while (randomPositionNumber === previous) {
-        randomPositionNumber = Math.floor(Math.random() * (this.holePositions.length - 1));
+        randomPositionNumber = Math.floor(Math.random() * (this.holePositions.length));
       }
       previous = randomPositionNumber;
       this.holePositions[randomPositionNumber].appendChild(this.goblinPosition);
