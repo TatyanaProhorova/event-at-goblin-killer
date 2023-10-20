@@ -1,12 +1,26 @@
 {
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "useBuiltIns": "usage",
-          "corejs": 3
-        }
-      ]
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "usage",
+        "corejs": 3
+      }
     ]
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        [
+          "@bable/preset-env",
+          {
+            "targets": {
+              "node": "current"
+            }
+          }          
+        ]
+      ]
+    }
   }
-  
+}
+ //для BABEL следует брать текущую версию NOODEJS при транспилляции кода

@@ -1,4 +1,8 @@
 import Goblin from './goblin';
 
-const Game = new Goblin(document.querySelector('.playing-field'));
-Game.jump();
+document.addEventListener('DOMContentLoaded', () => {
+
+  const Game = new Goblin(document.querySelector('.playing-field'));  
+  Game.jump();
+ });
+    
